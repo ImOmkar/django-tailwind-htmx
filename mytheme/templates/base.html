@@ -1,0 +1,44 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>{{ title }}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+
+		<style>
+			*{
+				font-family: 'Ubuntu', sans-serif;
+			}
+		
+
+		</style>
+	</head>
+
+	<body>
+		<div class="">
+			<nav class="py-3 flex justify-center shadow-xl">
+				<div class="mx-2 my-2">
+					<a class="px-3 py-4 bg-red-100 text-red-500 font-bold lg:text-3xl text-xl rounded-md">Django + Tailwind + HTMX = ❤️</a>
+				</div>
+			</nav>
+		</div>
+
+		{% block content %} {% endblock content %}
+
+
+	<script src="https://unpkg.com/htmx.org@1.1.0"></script>
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script>
+      document.body.addEventListener('htmx:configRequest', (event) => {
+        event.detail.headers['X-CSRFToken'] = '{{ csrf_token }}';
+      })
+    </script>
+		
+	</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% block content %}
+
+<div id="form" class="text-center my-6 mx-0">
+    {% include "tasks_create.html" %}
+    
+</div>
+
+<div class="text-center my-14">
+    <div class="flex justify-center my-4">
+        {% include "tasks_list.html" %}
+    </div>
+</div>
+
+
+{% endblock content %}

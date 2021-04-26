@@ -1,0 +1,8 @@
+{% load widget_tweaks %}
+
+<form hx-post="{% url 'update_task' id=edit_form.instance.id %}" hx-target="body">
+    {% csrf_token %}
+    {% render_field edit_form.task class="rounded-md border-1 border-gray-300" %}
+    <input type="submit" class="px-3 cursor-pointer py-2 rounded-lg bg-indigo-500 text-white" value="Update">
+    <button class="px-3 cursor-pointer py-2 rounded-lg border-none focus-none">Cancel</button>
+</form>
