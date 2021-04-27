@@ -6,7 +6,5 @@
 1. Create a virtual environment.
 2. pull this `https://github.com/ImOmkar/django-tailwind-htmx.git` repo inside the virtual environment.
 3. go to the `django_htmx` folder and run `pip install -r requirements.txt`
-4. open two terminal/CMDs
-   4.1. In terminal no.1, run `python manage.py tailwind start`
-   4.2. In terminal no.2, run `python manage.py runserver`
+4. run `python manage.py tailwind start` & `python manage.py runserver` in two different terminal.
 
