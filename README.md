@@ -10,3 +10,8 @@
 3. go to the `django_htmx` folder and run `pip install -r requirements.txt`
 4. run `python manage.py tailwind start` & `python manage.py runserver` in two different terminal.
 
+## Third-party packages:
+
+1. `django-livereload-server`
+2. `django-tailwind`
+3. `django-widget-tweaks` 

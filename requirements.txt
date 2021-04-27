@@ -7,7 +7,6 @@ chardet==4.0.0
 click==7.1.2
 cookiecutter==1.7.2
 Django==3.2
-django-htmx==1.0.1
 django-livereload-server==0.3.2
 django-tailwind==2.0.1
 django-widget-tweaks==1.4.8
